@@ -1,12 +1,12 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import cryptoApi, { API_KEY } from '../../common/apis/cryptoApi'
+import cryptoApi from '../../common/apis/cryptoApi'
 
 export const fetchAsyncCryptoNews = createAsyncThunk('', async () => {
   const response = await cryptoApi.get(`/news/search?q=Cryptocurrency&safeSearch=Off&textFormat=Raw&freshness=Day&count=${9}`, {
     headers: {
       'x-bingapis-sdk': 'true',
       'x-rapidapi-host': 'bing-news-search1.p.rapidapi.com',
-      'x-rapidapi-key': API_KEY
+      'x-rapidapi-key': process.env.REACT_APP_API_KEY
     },
   })
   const newDate = await response.data.value.map((item, index) => ({

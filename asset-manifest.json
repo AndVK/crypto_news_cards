@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/crypto_news_cards/static/css/main.b69031e7.css",
+    "main.js": "/crypto_news_cards/static/js/main.0eaf71b4.js",
+    "index.html": "/crypto_news_cards/index.html",
+    "main.b69031e7.css.map": "/crypto_news_cards/static/css/main.b69031e7.css.map",
+    "main.0eaf71b4.js.map": "/crypto_news_cards/static/js/main.0eaf71b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b69031e7.css",
+    "static/js/main.0eaf71b4.js"
+  ]
+}
